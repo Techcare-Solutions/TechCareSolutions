@@ -1,27 +1,27 @@
 //Load made websites from json
-    {
-        const websitesTable = document.getElementById('websitesTable');
-        fetch('/js/portfolio/websites.json')
-            .then(response => response.json())
-            .then(data => {
-                data.forEach(website => {
-                    websitesTable.innerHTML += `
+{
+    const websitesTable = document.getElementById('websitesTable');
+    fetch('/js/portfolio/websites.json')
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(website => {
+                websitesTable.innerHTML += `
                     <tr>
                     <td>${website.name}</td>
                     <td>${website.description}</td>
                     <td><a href="${website.url}" target="_blank" class="badge badge-info">View</a></td>
                     </tr>
                     `
-                })
-            }).catch(error => console.error('Error: ', error))
-        websitesTable.innerHTML = '';
-    }
+            })
+        }).catch(error => console.error('Error: ', error))
+    websitesTable.innerHTML = '';
+}
 
-
+/*
 //Load GitHub projects
     {
-        const usernames = ['zouffke', 'softtagz-sys'];
-        const excludedProjects = ['softtagz-sys', 'zouffke', 'softtagz-sys.github.io'];
+        const usernames = [];
+        const excludedProjects = [];
         const projectsTable = document.getElementById('projectsTable');
         projectsTable.innerHTML = '';
 
@@ -51,3 +51,4 @@
                 });
             });
     }
+    */
