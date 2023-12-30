@@ -20,7 +20,7 @@
 
 //Load GitHub projects
     {
-        const usernames = ['zouffke', 'softtagz-sys'];
+        const usernames = ['zouffke', 'softtagz-sys', 'Techcare-Solutions'];
         const excludedProjects = ['softtagz-sys', 'zouffke', 'softtagz-sys.github.io'];
         const projectsTable = document.getElementById('projectsTable');
         projectsTable.innerHTML = '';
