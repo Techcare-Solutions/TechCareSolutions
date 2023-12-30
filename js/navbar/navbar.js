@@ -1,5 +1,5 @@
 window.onload = function () {
-    fetch('navbar.html')
+    fetch('/html/templates/navbar.html')
         .then(response => response.text())
         .then(data => {
             data = setActiveClass(data);
