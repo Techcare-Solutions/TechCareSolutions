@@ -13,13 +13,28 @@ function setActiveClass(data) {
 
     switch (page) {
         case 'portfolio.html':
-            const regex = /id="portfolioDropdown" class="([^"]*)"/;
-            const match = data.match(regex);
-            if (match && match[1]) {
-                const currentClasses = match[1];
-                data = data.replace(regex, `id="portfolioDropdown" class="${currentClasses} active"`);
-            }
+            data = replaceData(data, "portfolioDropdown")
             break;
+        case 'about.html':
+            data = replaceData(data, "navbarAbout")
+            break;
+        case 'pricing.html':
+            data = replaceData(data, "navbarPricing")
+            break;
+        case 'contact.html':
+            data = replaceData(data, "navbarContact");
+            break;
+    }
+
+    return data;
+}
+
+function replaceData(data, id) {
+    const regex = new RegExp(`id="${id}" class="([^"]*)"`);
+    const match = data.match(regex);
+    if (match && match[1]) {
+        const currentClasses = match[1];
+        data = data.replace(regex, `id="portfolioDropdown" class="${currentClasses} active"`);
     }
 
     return data;
