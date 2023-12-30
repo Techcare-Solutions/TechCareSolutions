@@ -18,8 +18,8 @@ function setActiveClass(data) {
         case 'about.html':
             data = replaceData(data, "navbarAbout")
             break;
-        case 'pricing.html':
-            data = replaceData(data, "navbarPricing")
+        case 'services.html':
+            data = replaceData(data, "navbarServices")
             break;
         case 'contact.html':
             data = replaceData(data, "navbarContact");
