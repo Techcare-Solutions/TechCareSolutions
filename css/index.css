@@ -23,3 +23,8 @@
 .row {
     justify-content: space-evenly;
 }
+
+#contactUs {
+    margin-top: 5rem;
+    background: lightgrey;
+}
