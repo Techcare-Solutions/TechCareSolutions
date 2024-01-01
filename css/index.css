@@ -1,8 +1,8 @@
-.mainGrid{
+.mainGrid {
     display: grid;
 }
 
-.banner{
+.banner {
     background: lightgrey;
     height: 500px;
 }
