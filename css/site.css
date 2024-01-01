@@ -19,4 +19,6 @@ footer > div {
 
 .cardLink, .cardLink:hover {
     text-decoration: none;
+    color: black;
+    text-align: center;
 }
