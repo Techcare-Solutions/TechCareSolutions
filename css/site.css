@@ -8,6 +8,10 @@ footer {
     margin-top: auto;
 }
 
+footer > div {
+    margin-top: 5rem;
+}
+
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
@@ -15,5 +19,6 @@ footer {
 
 .cardLink, .cardLink:hover {
     text-decoration: none;
+    color: black;
+    text-align: center;
 }
-
